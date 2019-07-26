@@ -1,0 +1,23 @@
+{
+  "name": "mern-app-with-graphql",
+  "version": "1.0.0",
+  "description": "Web API built with Node.js, Express, MongoDB, and GraphQL",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "concurrently \"nodemon server.js\" \"cd client && npm run start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.4.2",
+    "mongoose": "^5.6.6"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.1"
+  }
+}
