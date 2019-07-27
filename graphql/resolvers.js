@@ -8,7 +8,7 @@ function article(args) {
   return Article.findById(args.id)
 }
 
-async function createArticle(args) {
+function createArticle(args) {
   let article = new Article(args.articleInput);
   return article.save();
 }
