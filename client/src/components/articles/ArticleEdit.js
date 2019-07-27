@@ -3,8 +3,8 @@ import { Query, Mutation } from 'react-apollo';
 import { GET_ARTICLE, UPDATE_ARTICLE, GET_ARTICLES } from '../../graphql/articleQueries';
 
 function ArticleEdit(props) {
-  function handleCancel(props) {
-    props.history.push(`/articles/${props.match.params._id}`);
+  function handleCancel(id) {
+    props.history.push(`/articles/${id}`);
   }
 
   let title, content;
@@ -51,7 +51,8 @@ function ArticleEdit(props) {
                       </div>
                       <div className="btn-group">
                         <button type="submit" className="btn btn-primary">Update</button>
-                        <button type="button" onClick={handleCancel} className="btn btn-secondary">Cancel</button>
+                        <button type="button" className="btn btn-secondary" 
+                          onClick={function() { handleCancel(article.id) }}>Cancel</button>
                       </div>
                     </form>
                   </div>
