@@ -8,18 +8,17 @@ function ArticleList() {
     <div>
       <h2>
         Articles
-        <Link to="/articles/new" className="btn btn-outline-primary float-right"> 
+        <Link to="/articles/new" className="btn btn-primary float-right"> 
           Create Article
         </Link> 
       </h2>
       <Query query={GET_ARTICLES}> 
-        {function({ loading, error, data }) { 
+        {function({ loading, error, data }) {
           if (loading) return "Loading...";
           if (error) return `Error! ${error.message}`;
           const { articles } = data; 
           return (
-            <div>
-            {articles.map(function(article) { 
+            articles.map(function(article) { 
               return(
                 <div key={article.id}> 
                   <hr/>
@@ -27,8 +26,7 @@ function ArticleList() {
                   <small>id: {article.id}</small>
                 </div>
               )     
-            })}
-            </div>
+            })
           );
         }}
       </Query>

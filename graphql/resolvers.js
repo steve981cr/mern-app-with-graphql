@@ -18,7 +18,7 @@ function deleteArticle(args) {
 }
 
 function updateArticle(args) {
-  return Article.findByIdAndUpdate(args.id, args.articleInput);
+  return Article.findByIdAndUpdate(args.id, args.articleInput, { new: true });
 }
 
 module.exports = { articles, article, createArticle, deleteArticle, updateArticle }

@@ -29,14 +29,12 @@ function ArticleAdd(props) {
               </div>
               <div className="form-group">
                 <label>Content:</label>
-                <input type="text" className="form-control" 
-                ref={function(node) { return content = node; }}
+                <textarea rows="5" className="form-control"
+                  ref={function(node) { return content = node; }} 
                 />
               </div>
-              <p className="btn-group">
-                <button type="submit" className="btn btn-primary">Submit</button>
-               <Link to="/articles" className="btn btn-secondary">Cancel</Link>
-              </p>
+              <button type="submit" className="btn btn-primary">Submit</button>
+              <Link to="/articles" className="btn btn-secondary float-right">Cancel</Link>
             </form>
           </div>
         )}

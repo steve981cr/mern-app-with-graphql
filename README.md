@@ -8,7 +8,7 @@ https://www.techandstartup.com/tutorials/build-a-graphql-api-with-node-express-a
 
 Part 2: Build a React app with GraphQL Tutorial can be read at:
 
-https://www.techandstartup.com/tutorials/
+https://www.techandstartup.com/tutorials/build-a-react-app-with-graphql
 
 Similarly there are two parts to this app:
 
