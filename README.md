@@ -4,7 +4,7 @@ This application goes along with the Build a MERN with GraphQL CRUD application 
 
 Part 1: Build a GraphQL API with Node, Express, and MongoDB Tutorial can be read at:
 
-https://www.techandstartup.com/tutorials/build-a-graphql-api-with-node-express-and-mongodb
+https://www.techandstartup.com/tutorials/build-a-graphql-api-with-node-and-express
 
 Part 2: Build a React app with GraphQL Tutorial can be read at:
 
